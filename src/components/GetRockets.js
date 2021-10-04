@@ -1,6 +1,3 @@
-// import { useDispatch } from 'react-redux';
-// import { setReservation } from '../redux/rockets/rockets';
-
 const getReservation = async () => {
   const newResponse = [];
   await fetch('https://api.spacexdata.com/v3/rockets')

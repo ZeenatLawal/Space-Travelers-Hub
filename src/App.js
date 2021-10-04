@@ -2,7 +2,7 @@ import './styles/App.css';
 import { useEffect } from 'react';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import getReservation from './Pages/GetReservation';
+import getReservation from './components/GetRockets';
 import { setReservation } from './redux/rockets/rockets';
 import NavBar from './Pages/NavBar';
 import MyProfile from './components/MyProfile';

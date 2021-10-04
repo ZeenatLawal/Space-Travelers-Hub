@@ -17,7 +17,6 @@ export const setReservation = (payload) => ({
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_RESERVATION:
-      console.log(action.payload);
       return state.concat(action.payload);
     default:
       return state;
