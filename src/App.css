@@ -2,3 +2,47 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.App {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logoImg {
+  width: 50px;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.headerWrap {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.navLink {
+  padding: 0 0.5rem;
+}
+
+.navLink:last-child {
+  border-left: 2px solid;
+}
