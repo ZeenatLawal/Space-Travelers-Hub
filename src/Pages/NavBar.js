@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import Header from './Header';
 
 const NavBar = () => {
@@ -14,7 +15,7 @@ const NavBar = () => {
     },
     {
       id: 3,
-      path: '/My Profile',
+      path: '/MyProfile',
       text: 'My Profile',
     },
   ];
@@ -25,7 +26,14 @@ const NavBar = () => {
       <ul className="navLinks">
         {links.map((link) => (
           <li key={link.id} className="navLink">
-            {link.text}
+            <NavLink
+              to={link.path}
+              exact={`${true}`}
+              className="link"
+              activeClassName="activeLink"
+            >
+              {link.text}
+            </NavLink>
           </li>
         ))}
       </ul>
