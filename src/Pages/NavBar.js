@@ -29,8 +29,7 @@ const NavBar = () => {
             <NavLink
               to={link.path}
               exact={`${true}`}
-              className="link"
-              activeClassName="activeLink"
+              activeClassName="active"
             >
               {link.text}
             </NavLink>

@@ -46,3 +46,12 @@ ul {
 .navLink:last-child {
   border-left: 2px solid;
 }
+
+.active {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: #0a7fff;
+}
