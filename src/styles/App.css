@@ -125,6 +125,7 @@ a {
 
 .myRockets {
   font-size: 20px;
+  font-weight: bold;
 }
 
 .myRocketLists {
@@ -135,6 +136,7 @@ a {
 .myRocketList {
   border: 1px solid #333;
   padding: 0.5rem 0.5rem;
+  font-weight: bold;
 }
 
 .noReservation {
