@@ -66,4 +66,14 @@ a {
 
 .rocketImg {
   width: 200px;
+  height: 200px;
+}
+
+.rocketWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  width: 80%;
+  margin: 2rem auto;
 }
