@@ -18,9 +18,9 @@ const Mission = ({ mission }) => {
 
   return (
     <tr key={mission.id}>
-      <td><strong>{mission.name}</strong></td>
-      <td className="pb-4">{mission.description}</td>
-      <td>
+      <td className="pb-4 col-1"><strong>{mission.name}</strong></td>
+      <td className="pb-4 col-8">{mission.description}</td>
+      <td className="align-middle">
         {mission.reserved && (
           <Badge bg="primary">Active Member</Badge>
         )}
@@ -28,7 +28,7 @@ const Mission = ({ mission }) => {
           <Badge bg="secondary">NOT A MEMBER</Badge>
         )}
       </td>
-      <td>
+      <td className="align-middle">
         {mission.reserved && (
           <Button variant="outline-danger" size="sm" onClick={() => leave(mission.id)}>Leave Mission</Button>
         )}
