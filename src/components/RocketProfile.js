@@ -1,4 +1,3 @@
-// import React from 'react';
 import { useSelector } from 'react-redux';
 
 const RocketProfile = () => {
@@ -8,17 +7,17 @@ const RocketProfile = () => {
     bookedRockets = rockets.filter((rocket) => rocket.reserved);
   }
   return (
-    <div>
-      <h2>My Rockets</h2>
+    <div className="rocketProfileWrap">
+      <h4 className="myRockets">My Rockets</h4>
       {bookedRockets && (
-        <ul>
+        <ul className="myRocketLists">
           {bookedRockets.map((rocket) => (
-            <li key={rocket.id}>{rocket.rocket_name}</li>
+            <li key={rocket.id} className="myRocketList">{rocket.rocket_name}</li>
           ))}
         </ul>
       )}
       {(!bookedRockets || !bookedRockets[0]) && (
-        <h4>You have not reserved any rocket!</h4>
+        <h5 className="noReservation">No reservation yet!</h5>
       )}
     </div>
   );

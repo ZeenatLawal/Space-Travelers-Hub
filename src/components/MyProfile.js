@@ -2,8 +2,7 @@ import React from 'react';
 import RocketProfile from './RocketProfile';
 
 const MyProfile = () => (
-  <div>
-    <h1>Under Construction</h1>
+  <div className="myProfile">
     <RocketProfile />
   </div>
 );
