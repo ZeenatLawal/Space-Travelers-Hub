@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import RocketProfile from './RocketProfile';
 import Container from 'react-bootstrap/Container';
 
 const MyProfile = () => {
@@ -18,6 +19,10 @@ const MyProfile = () => {
         <h3>No Reserved Mission</h3>
       )}
     </Container>
+    <div className="myProfile">
+      <RocketProfile />
+    </div>
   );
 };
+
 export default MyProfile;

@@ -25,16 +25,16 @@ const RocketList = (props) => {
       </div>
       <div className="textWrap">
         <p className="rocketName">{rocketProps.rocket_name}</p>
-        <p>
+        <div>
           {rocketProps.reserved ? (
-            <div>
+            <p>
               <span className="reserveBadge">Reserved</span>
               {rocketProps.description}
-            </div>
+            </p>
           ) : (
             rocketProps.description
           )}
-        </p>
+        </div>
         {rocketProps.reserved && (
           <button
             id={rocketProps.id}
