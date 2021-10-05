@@ -4,14 +4,21 @@ import PropTypes from 'prop-types';
 const RocketList = (props) => {
   const { rocketProps } = props;
   return (
-    <li key={rocketProps.id}>
-      <p>{rocketProps.rocket_name}</p>
-      <p>{rocketProps.description}</p>
-      <img
-        src={rocketProps.flickr_images}
-        alt="rocket images"
-        className="rocketImg"
-      />
+    <li key={rocketProps.id} className="rocketWrap">
+      <div className="imgWrap">
+        <img
+          src={rocketProps.flickr_images}
+          alt="rocket images"
+          className="rocketImg"
+        />
+      </div>
+      <div className="textWrap">
+        <p>{rocketProps.rocket_name}</p>
+        <p>{rocketProps.description}</p>
+        <button type="button" className="reserveBtn">
+          Reserve Rocket
+        </button>
+      </div>
     </li>
   );
 };
