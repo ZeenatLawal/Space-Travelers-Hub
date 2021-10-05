@@ -26,14 +26,26 @@ const RocketList = (props) => {
       <div className="textWrap">
         <p>{rocketProps.rocket_name}</p>
         <p>{rocketProps.description}</p>
-        <button
-          id={rocketProps.id}
-          type="button"
-          className="reserveBtn"
-          onClick={handleClick}
-        >
-          {rocketProps.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
-        </button>
+        {rocketProps.reserved && (
+          <button
+            id={rocketProps.id}
+            type="button"
+            className="cancelReserveBtn"
+            onClick={handleClick}
+          >
+            Cancel
+          </button>
+        )}
+        {!rocketProps.reserved && (
+          <button
+            id={rocketProps.id}
+            type="button"
+            className="ReserveBtn"
+            onClick={handleClick}
+          >
+            Reserve
+          </button>
+        )}
       </div>
     </li>
   );
