@@ -7,6 +7,7 @@ import NavBar from './Pages/NavBar';
 import MyProfile from './components/MyProfile';
 import Rockets from './components/Rockets';
 import store from './redux/configureStore';
+import Missions from './components/Missions';
 
 function App() {
   useEffect(async () => {
@@ -21,6 +22,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Rockets />
+          </Route>
+          <Route path="/Missions">
+            <Missions />
           </Route>
           <Route path="/MyProfile">
             <MyProfile />
