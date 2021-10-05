@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { bookReservation } from '../redux/rockets/rockets';
+import { bookReservation,  } from '../redux/rockets/rockets';
 
 const RocketList = (props) => {
   const { rocketProps } = props;
   const dispatch = useDispatch();
 
   const handleClick = (e) => {
+    if (rocketProps.reserved) {
+      dispatch()
+    }
     dispatch(bookReservation(e.target.id));
   };
 
