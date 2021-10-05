@@ -7,7 +7,11 @@ const RocketList = (props) => {
     <li key={rocketProps.id}>
       <p>{rocketProps.rocket_name}</p>
       <p>{rocketProps.description}</p>
-      <img src={rocketProps.flickr_images} alt="rocket images" className="rocketImg" />
+      <img
+        src={rocketProps.flickr_images}
+        alt="rocket images"
+        className="rocketImg"
+      />
     </li>
   );
 };
@@ -17,7 +21,9 @@ RocketList.propTypes = {
     id: PropTypes.number,
     rocket_name: PropTypes.node,
     description: PropTypes.string,
-    flickr_images: PropTypes.oneOf(['News', 'image']),
+    /* eslint-disable*/
+    flickr_images: PropTypes.array,
+    /* eslint-enable */
   }).isRequired,
 };
 
