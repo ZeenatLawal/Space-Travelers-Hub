@@ -9,7 +9,7 @@ const Missions = () => {
 
   return (
     <Container>
-      <Table striped bordered hover>
+      <Table striped bordered>
         <thead>
           <tr>
             <th>Missions</th>
