@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Button from 'react-bootstrap/Button';
 
 const Mission = ({ mission }) => (
-  <li key={mission.id}>
-    <p>{mission.name}</p>
-    <p>{mission.description}</p>
-  </li>
+  <tr key={mission.id}>
+    <td><strong>{mission.name}</strong></td>
+    <td>{mission.description}</td>
+    <td>NOT A MEMBER</td>
+    <td><Button variant="outline-dark">Join Mission</Button></td>
+  </tr>
 );
 
 Mission.propTypes = {
