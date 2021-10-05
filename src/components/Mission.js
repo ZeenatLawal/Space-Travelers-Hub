@@ -19,7 +19,7 @@ const Mission = ({ mission }) => {
   return (
     <tr key={mission.id}>
       <td><strong>{mission.name}</strong></td>
-      <td>{mission.description}</td>
+      <td className="pb-4">{mission.description}</td>
       <td>
         {mission.reserved && (
           <Badge bg="primary">Active Member</Badge>
@@ -46,7 +46,7 @@ Mission.propTypes = {
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    reserved: PropTypes.string.isRequired,
+    reserved: PropTypes.bool,
   }).isRequired,
 };
 
