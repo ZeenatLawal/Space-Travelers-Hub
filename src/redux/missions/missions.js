@@ -2,6 +2,7 @@ import getMissions from '../../getMissions';
 
 const LOAD_MISSIONS = 'space-travelers-hub/missions/LOAD_MISSIONS';
 const JOIN_MISSION = 'space-travelers-hub/missions/JOIN_MISSION';
+const LEAVE_MISSION = 'space-travelers-hub/missions/LEAVE_MISSION';
 
 const initialState = [];
 
@@ -26,6 +27,11 @@ export const joinMission = (mission) => ({
   payload: mission,
 });
 
+export const leaveMission = (mission) => ({
+  type: LEAVE_MISSION,
+  payload: mission,
+});
+
 const missionsReducer = (state = initialState, action) => {
   switch (action.type) {
     case LOAD_MISSIONS:
@@ -41,6 +47,16 @@ const missionsReducer = (state = initialState, action) => {
             return { ...mission };
           }
           return { ...mission, reserved: true };
+        }),
+      };
+    case LEAVE_MISSION:
+      return {
+        ...state,
+        missions: state.missions.map((mission) => {
+          if (mission.id !== action.payload) {
+            return { ...mission };
+          }
+          return { ...mission, reserved: false };
         }),
       };
     default:
