@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { bookReservation, cancleReservation } from '../redux/rockets/rockets';
+import { bookRockets, cancleReservation } from '../redux/rockets/rockets';
 
 const RocketList = (props) => {
   const { rocketProps } = props;
@@ -11,7 +11,7 @@ const RocketList = (props) => {
     if (rocketProps.reserved) {
       return dispatch(cancleReservation(e.target.id));
     }
-    return dispatch(bookReservation(e.target.id));
+    return dispatch(bookRockets(e.target.id));
   };
 
   return (
