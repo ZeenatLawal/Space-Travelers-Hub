@@ -8,11 +8,11 @@ const Missions = () => {
   const missions = useSelector((state) => state.missionsReducer.missions);
 
   return (
-    <Container>
+    <Container className="mt-4">
       <Table striped bordered>
         <thead>
           <tr>
-            <th>Missions</th>
+            <th>Mission</th>
             <th>Description</th>
             <th>Status</th>
             <th> </th>

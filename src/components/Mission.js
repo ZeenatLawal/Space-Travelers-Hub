@@ -20,15 +20,15 @@ const Mission = ({ mission }) => {
     <tr key={mission.id}>
       <td className="pb-4 col-1"><strong>{mission.name}</strong></td>
       <td className="pb-4 col-8">{mission.description}</td>
-      <td className="align-middle">
+      <td className="align-middle col-1">
         {mission.reserved && (
-          <Badge bg="primary">Active Member</Badge>
+          <Badge className="bg-badge">Active Member</Badge>
         )}
         {!mission.reserved && (
           <Badge bg="secondary">NOT A MEMBER</Badge>
         )}
       </td>
-      <td className="align-middle">
+      <td className="align-middle ps-2">
         {mission.reserved && (
           <Button variant="outline-danger" size="sm" onClick={() => leave(mission.id)}>Leave Mission</Button>
         )}
