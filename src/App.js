@@ -2,14 +2,12 @@ import './styles/App.css';
 import { useEffect } from 'react';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import getReservation from './components/GetRockets';
-import { setRockets } from './redux/rockets/rockets';
 import NavBar from './Pages/NavBar';
 import MyProfile from './components/MyProfile';
 import Rockets from './components/Rockets';
-import store from './redux/configureStore';
 import Missions from './components/Missions';
 import { loadMissions } from './redux/missions/missions';
+import { loadRockets } from './redux/rockets/rockets';
 
 function App() {
   const dispatch = useDispatch();
@@ -19,8 +17,7 @@ function App() {
   }, [dispatch]);
 
   useEffect(async () => {
-    const data = await getReservation();
-    store.dispatch(setRockets(data));
+    dispatch(loadRockets());
   }, []);
 
   return (
