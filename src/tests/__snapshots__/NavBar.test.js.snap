@@ -29,7 +29,7 @@ exports[`test if NavBar renders correctly 1`] = `
           aria-current="page"
           className="active"
           data-testid={1}
-          href="/"
+          href="#/"
           onClick={[Function]}
           style={Object {}}
         >
@@ -42,7 +42,7 @@ exports[`test if NavBar renders correctly 1`] = `
         <a
           aria-current={null}
           data-testid={2}
-          href="/Missions"
+          href="#/Missions"
           onClick={[Function]}
         >
           Missions
@@ -54,7 +54,7 @@ exports[`test if NavBar renders correctly 1`] = `
         <a
           aria-current={null}
           data-testid={3}
-          href="/MyProfile"
+          href="#/MyProfile"
           onClick={[Function]}
         >
           My Profile
