@@ -43,9 +43,9 @@ const Mission = ({ mission }) => {
 
 Mission.propTypes = {
   mission: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    id: PropTypes.string,
+    name: PropTypes.string,
+    description: PropTypes.string,
     reserved: PropTypes.bool,
   }).isRequired,
 };

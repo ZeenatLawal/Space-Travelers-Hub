@@ -25,7 +25,7 @@ const RocketList = (props) => {
       </div>
       <div className="textWrap">
         <p className="rocketName">{rocketProps.rocket_name}</p>
-        <div>
+        <div className="mb-3">
           {rocketProps.reserved ? (
             <p>
               <span className="reserveBadge">Reserved</span>
