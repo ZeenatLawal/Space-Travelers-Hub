@@ -1,17 +1,16 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import { render, screen, fireEvent } from '@testing-library/react';
-// eslint-disable-next-line import/extensions
-import NavBar from '../pages/NavBar';
+import NavBar from '../Pages/NavBar';
 
 describe('test if NavBar', () => {
   test('renders correctly', () => {
     const component = renderer
       .create(
-        <BrowserRouter>
+        <Router>
           <NavBar />
-        </BrowserRouter>,
+        </Router>
       )
       .toJSON();
     expect(component).toMatchSnapshot();
@@ -21,9 +20,9 @@ describe('test if NavBar', () => {
 describe('NavBar', () => {
   test('Responding on Rockets click ', () => {
     render(
-      <BrowserRouter>
+      <Router>
         <NavBar />
-      </BrowserRouter>,
+      </Router>
     );
     fireEvent.click(screen.getByText('Rockets'));
     screen.debug();
@@ -32,9 +31,9 @@ describe('NavBar', () => {
 
   test('Responding on Missions click ', () => {
     render(
-      <BrowserRouter>
+      <Router>
         <NavBar />
-      </BrowserRouter>,
+      </Router>
     );
     fireEvent.click(screen.getByText('Missions'));
     screen.debug();
@@ -43,9 +42,9 @@ describe('NavBar', () => {
 
   test('Responding on My Profile click ', () => {
     render(
-      <BrowserRouter>
+      <Router>
         <NavBar />
-      </BrowserRouter>,
+      </Router>
     );
     fireEvent.click(screen.getByText('My Profile'));
     screen.debug();
