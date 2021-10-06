@@ -23,9 +23,9 @@ ul {
 }
 
 .navBar {
-  width: 100%;
-  border-bottom: 1px solid;
-  margin-bottom: 2rem;
+  width: 98%;
+  border-bottom: 2px solid rgb(219, 219, 219);
+  margin: 0 auto;
 }
 
 .navWrap {
@@ -35,6 +35,10 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 0.8rem 0;
+}
+
+.bg-badge {
+  background-color: #18a2b8 !important;
 }
 
 .headerWrap {
@@ -120,7 +124,7 @@ a {
 }
 
 .rocketProfileWrap {
-  width: 50%;
+  width: 49%;
 }
 
 .myRockets {
@@ -135,8 +139,7 @@ a {
 
 .myRocketList {
   border: 1px solid #333;
-  padding: 0.5rem 0.5rem;
-  font-weight: bold;
+  padding: 0.7rem 0.7rem 1.2rem 0.7rem;
 }
 
 .noReservation {
