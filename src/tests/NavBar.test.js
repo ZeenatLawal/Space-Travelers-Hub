@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
 import { render, screen, fireEvent } from '@testing-library/react';
 // eslint-disable-next-line import/extensions
-import NavBar from '../pages/NavBar.js';
+import NavBar from '../pages/NavBar';
 
 describe('test if NavBar', () => {
   test('renders correctly', () => {
