@@ -28,6 +28,7 @@ const NavBar = () => {
           {links.map((link) => (
             <li key={link.id} className="navLink">
               <NavLink
+                data-testid={link.id}
                 to={link.path}
                 exact
                 activeClassName="active"
