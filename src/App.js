@@ -21,7 +21,7 @@ function App() {
   useEffect(async () => {
     const data = await getReservation();
     store.dispatch(setReservation(data));
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="App">
