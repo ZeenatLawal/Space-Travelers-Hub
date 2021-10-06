@@ -11,9 +11,9 @@ exports[`test if NavBar renders correctly 1`] = `
       className="headerWrap"
     >
       <img
-        alt="haha"
+        alt="planet"
         className="logoImg"
-        src="../planet.png"
+        src="space.png"
       />
       <h1>
         Space Traveler's Hub
