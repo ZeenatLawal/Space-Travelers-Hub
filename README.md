@@ -31,7 +31,7 @@
 - Create a branch to work on
 - Run `npm install`
 - Run `npm start` to launch the server.
-- Run `npm test` to run tests.
+- Run `npm test` to run all tests.
 
 ## Authors
 
