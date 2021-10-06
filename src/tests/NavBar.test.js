@@ -10,7 +10,7 @@ describe('test if NavBar', () => {
       .create(
         <Router>
           <NavBar />
-        </Router>
+        </Router>,
       )
       .toJSON();
     expect(component).toMatchSnapshot();
@@ -22,7 +22,7 @@ describe('NavBar', () => {
     render(
       <Router>
         <NavBar />
-      </Router>
+      </Router>,
     );
     fireEvent.click(screen.getByText('Rockets'));
     screen.debug();
@@ -33,7 +33,7 @@ describe('NavBar', () => {
     render(
       <Router>
         <NavBar />
-      </Router>
+      </Router>,
     );
     fireEvent.click(screen.getByText('Missions'));
     screen.debug();
@@ -44,7 +44,7 @@ describe('NavBar', () => {
     render(
       <Router>
         <NavBar />
-      </Router>
+      </Router>,
     );
     fireEvent.click(screen.getByText('My Profile'));
     screen.debug();
