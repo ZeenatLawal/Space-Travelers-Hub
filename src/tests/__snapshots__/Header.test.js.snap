@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="headerWrap"
+>
+  <img
+    alt="haha"
+    className="logoImg"
+    src="../planet.png"
+  />
+  <h1>
+    Space Traveler's Hub
+  </h1>
+</div>
+`;
