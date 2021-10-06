@@ -45,7 +45,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         rockets: state.rockets.map((rocket) => {
           if (rocket.id !== parseInt(action.id, 10)) {
-            return { ...rocket };
+            return rocket;
           }
           return { ...rocket, reserved: true };
         }),
@@ -55,7 +55,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         rockets: state.rockets.map((rocket) => {
           if (rocket.id !== parseInt(action.id, 10)) {
-            return { ...rocket };
+            return rocket;
           }
           return { ...rocket, reserved: false };
         }),
