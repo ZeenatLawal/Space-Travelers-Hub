@@ -44,7 +44,7 @@ const missionsReducer = (state = initialState, action) => {
         ...state,
         missions: state.missions.map((mission) => {
           if (mission.id !== action.payload) {
-            return { ...mission };
+            return mission;
           }
           return { ...mission, reserved: true };
         }),
@@ -54,7 +54,7 @@ const missionsReducer = (state = initialState, action) => {
         ...state,
         missions: state.missions.map((mission) => {
           if (mission.id !== action.payload) {
-            return { ...mission };
+            return mission;
           }
           return { ...mission, reserved: false };
         }),
